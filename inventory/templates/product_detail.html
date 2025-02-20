@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Product Detail - Product Hub{% endblock %}
+
+{% block content %}
+<h1>Product Detail</h1>
+<div class="card">
+    <div class="card-header">
+        Product Name: <strong>Product 1</strong>
+    </div>
+    <div class="card-body">
+        <p><strong>Description:</strong> This is a detailed description of Product 1.</p>
+        <p><strong>Price:</strong> $100</p>
+        <p><strong>Stock Available:</strong> 20 units</p>
+    </div>
+</div>
+<p class="mt-3">
+    <a href="{% url 'product_list' %}" class="btn btn-secondary">Back to Product List</a>
+</p>
+{% endblock %}
